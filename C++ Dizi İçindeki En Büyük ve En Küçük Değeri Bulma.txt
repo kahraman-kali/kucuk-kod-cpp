@@ -1,0 +1,22 @@
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL,"Turkish"); //Türkçe karakter
+	int sayilar[]={5,10,15,13,15,22,42};
+	int buyuk=sayilar[0];
+	int kucuk=sayilar[0];
+	int n = sizeof(sayilar) / sizeof(sayilar[0]);
+    for(int i = 0; i < n; i++)
+    {
+    	if(sayilar[i]>buyuk);
+    	{
+    		buyuk=sayilar[i];
+		}
+		if(sayilar[i]<kucuk)
+		{
+			kucuk=sayilar[i];
+		}
+	}   
+    cout<<"En Küçük Sayı :  "<<kucuk<<endl;
+    cout<<"En Büyük Sayı :  "<<buyuk;
+}
